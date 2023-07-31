@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/31 11:30:14 by pteh              #+#    #+#             */
-/*   Updated: 2023/07/31 14:55:15 by pteh             ###   ########.fr       */
+/*   Created: 2023/07/31 13:47:03 by pteh              #+#    #+#             */
+/*   Updated: 2023/07/31 15:03:31 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_div_mod(int *a, int *b)
+int	ft_strlen(char *str)
 {
-	int	temp1;
-	int	temp2;
+	int	count;
 
-	temp1 = *a / *b;
-	temp2 = *a % *b;
-	*a = temp1;
-	*b = temp2;
+	count = 0;
+	while (*str != '\0')
+	{
+		str++;
+		count++;
+	}
+	return (count);
 }
