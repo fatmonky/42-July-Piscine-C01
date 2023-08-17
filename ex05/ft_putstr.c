@@ -6,7 +6,7 @@
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 13:40:41 by pteh              #+#    #+#             */
-/*   Updated: 2023/07/31 14:57:16 by pteh             ###   ########.fr       */
+/*   Updated: 2023/08/04 16:06:42 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,12 @@ void	ft_putstr(char *str)
 		ft_putchar(*str);
 		str++;
 	}
+}
+
+int	main(int	argc, char	**argv)
+{
+	if(argc >= 1)
+		ft_putstr(argv[0]);
+	ft_putchar('\n');
+	return(0);
 }
